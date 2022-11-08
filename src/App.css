@@ -1,38 +1,60 @@
 .App {
+  margin:0
+}
+.NavList{
+ 
+  color:brown;
+  font-weight: 500;
+  font-size: large;
+  font-family: sans-serif;
+  list-style-type: none;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 45%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Nav{
+  display:flex;
+  /* flex-direction: column; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.NavItems{
+  padding-left: 10%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttons{
+  margin-left: 5;
+}
+.button{
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.Rentpage{
+padding: 20px;
+margin-left: 100px;
+margin-right: 100px;
+margin-top: 50px;
+}
+.rentdetail{
+  display:flex;
+  
+}
+.property{
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 450px;
+  margin-top: 40px;
+  padding-top: 10px;
+  
+}
+.image{
+  width: 300px;
+  height: 300px;
+}
+.img{
+  width: 200px;
+  height: 250px;
+}
+/* .properties{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */
