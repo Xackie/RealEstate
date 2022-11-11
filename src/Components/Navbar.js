@@ -5,10 +5,9 @@ import {useNavigate} from "react-router-dom";
 function Navbar() {
     const history=useNavigate();
 
-  return (
-    <div className="Nav" style={{border:"1px solid black", width:"100%",height:80}}>
-        <ul className='NavList' >
-            <li className='NavItems'>Logo</li>
+  return (<>       
+   <ul  >
+            <li >Logo</li>
             <li
             onClick={()=>history(`/rent`)}>Rent</li>
             <li onClick={()=>history(`/buy`)}>Buy</li>
@@ -16,12 +15,15 @@ function Navbar() {
             <li onClick={()=>history(`/sell`)}>Sell</li>
             <li>Manage Property</li>
             <li>Resources</li>
-        </ul>
-        <div className='buttons'> 
-        <button  className='button'>Login</button>
-        <button  className='button'>Sign up</button>
-        </div>
-        </div>
+            <li  className="button">Login</li>
+            <li className="button">Sign up
+            </li>
+            </ul>
+
+            
+            </>
+
+            
   )
 }
 
