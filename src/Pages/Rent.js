@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 // import {baseUrl,fetchApi} from '../Configuration/Api'
 import Property from "./Property";
-import "./../App.css";
+// import Filters from "../Components/Filters";
 
 function Rent() {
   const [propertyList, setPropertList] = useState([]);
@@ -13,7 +13,7 @@ function Rent() {
         params: { state: "CA", city: "Los Angeles", page: "1" },
         headers: {
           "X-RapidAPI-Key":
-            "b77459cf98mshe2c9c6f1732745bp14dc57jsn64a808f72ec3",
+            "ecdda23cd8msh2c6ca1e57fb51adp111b6ejsn4bdf5d4f63cc",
           "X-RapidAPI-Host": "real-estate12.p.rapidapi.com",
         },
       }
@@ -22,12 +22,12 @@ function Rent() {
   };
 
   useEffect(() => {
-  fetchProperty();
+    fetchProperty();
   }, []);
   console.log(propertyList);
 
   return (
-    <div className="properties" style={{ border: "1px solid black" }}>
+    <div className="properties" >
       <div
         style={{
           height: "50px",
@@ -38,9 +38,9 @@ function Rent() {
       >
         Search properties to rent
       </div>
-      <div style={{ border: "1px solid black", height: "50px" }}>Filters</div>
-     
-          <Property propertyList={propertyList} />
+  
+
+       <Property propertyList={propertyList} />
     </div>
   );
 }

@@ -7,7 +7,7 @@ function Navbar() {
 
   return (<>       
    <ul  >
-            <li >Logo</li>
+            <li onClick={()=>history(`/`)} >Home</li>
             <li
             onClick={()=>history(`/rent`)}>Rent</li>
             <li onClick={()=>history(`/buy`)}>Buy</li>

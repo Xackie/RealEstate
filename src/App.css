@@ -2,7 +2,6 @@
   margin:0
 }
 
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -69,4 +68,11 @@ margin-top: 50px;
   display: flex;
   font-size: small;
   align-content: space-between;
+}
+.filters{
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 26px;
+  overflow: hidden;
+  background-color: rgb(179, 11, 11); 
 }
